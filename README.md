@@ -5,7 +5,7 @@ Kludgy Python script to get the geolocations of many IP addresses at once. Uses 
 To "install", mark the script as executable and place it somewhere in your path. You may also want to remove the .py extension. To uninstall, just delete the script.
 
 # Usage
-Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4 addresses to the script. Program will output locational data for all IPv4 addresses supplied in JSON notation.
+Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4 addresses to the script. Program will output locational data for all IPv4 addresses supplied in JSON notation, divided into groups of 100 (or less) JSON objects.
 
 # Example
     $ echo "93.184.216.34" | get-ip-location-data.py /var/log/auth.log
