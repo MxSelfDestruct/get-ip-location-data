@@ -1,5 +1,5 @@
 # get-ip-location-data
-Kludgy Python script to get the geolocations of many IP addresses at once. Uses https://ip-api.com for data. This script was initially created to scrape IP addresses from Endlessh logs, but can read and process IP addresses from many other sources, such as an SSHD auth log.
+Kludgy Python script to get the geolocations of many IP addresses at once. Uses https://ip-api.com for data. This script was initially created to scrape IP addresses from [Endlessh](https://github.com/skeeto/endlessh) logs, but can read and process IP addresses from many other sources, such as an SSHD auth log.
 
 # Installation (optional)
 To "install", mark the script as executable and place it somewhere in your path. You may also want to remove the .py extension. To uninstall, just delete the script.
