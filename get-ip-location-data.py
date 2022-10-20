@@ -91,7 +91,6 @@ def main(arguments):
         if i != request_strings[-1]:
             time.sleep(4) # IP-API only allows up to 15 batch requests per minute without payment.
 
-    print()
     return 0
 
 if __name__ == "__main__":
