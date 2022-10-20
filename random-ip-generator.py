@@ -43,8 +43,7 @@ def main():
 
     for i in range(int(n)):
         print(f"{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}")
-
-    print()
+        
     return 0
 
 if __name__ == "__main__":
