@@ -74,6 +74,7 @@ Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4
         "query": "124.220.187.30"
       }
     ]
+    
     $
 # Notes
 • This script requires the [Requests](https://pypi.org/project/requests/) library to function. \
@@ -100,6 +101,8 @@ Call it with a number as an argument and the script will generate that many IP a
     113.146.35.71
     147.35.217.41
     58.35.3.219
+    
+    $
 
 # Notes
 • This script has only been tested on Linux. I can't think of a reason it wouldn't work on Windows or Mac OS, but if it doesn't please let me know.
