@@ -33,7 +33,7 @@ def main(arguments):
 
     # Quit with error if no arguments given
     if arguments == []:
-        print("Usage: get-ip-location-data <ip addresses> <text files>")
+        print("Usage: get-ip-location-data <ip addresses> <text files>", file=sys.stderr)
         return 1
 
     # Make a string containing arguments seperated by spaces
@@ -59,7 +59,7 @@ def main(arguments):
                     invalid_args.append(i)
 
         if len(invalid_args) > 1:
-            print("Error: Invalid IP addresses or filenames: " + ', '.join(invalid_args))
+            print("Error: Invalid IP addresses or filenames: " + ', '.join(invalid_args), file=sys.stderr)
 
             return 1
 
@@ -86,10 +86,12 @@ def main(arguments):
 
         print(ip_api_response.replace("]\n", "\n]\n\n")) # Ew.
 
-        # Unless this is the last request, wait four seconds to avoid flooding
+        # Unless this is the last request, wait 4 seconds to avoid flooding. We're not worried about false positives
+        # since duplicates have already been filtered out
         if i != request_strings[-1]:
-            time.sleep(4)
+            time.sleep(4) # IP-API only allows up to 15 batch requests per minute without payment.
 
+    print()
     return 0
 
 if __name__ == "__main__":
