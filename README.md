@@ -85,7 +85,7 @@ Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4
 A script to generate random IP addresses for testing get-ip-location-data.
 
 # Installation (optional)
-See steps for get-ip-location-data
+See the above instructions for get-ip-location-data.
 
 # Usage
 Call it with a number as an argument and the script will generate that many IP addresses.
