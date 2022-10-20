@@ -36,9 +36,15 @@ def main():
 
         return 1
 
+    if n < 0:
+        print("Error: number must be greater than zero.", file=sys.stderr)
+
+        return 1
+
     for i in range(int(n)):
         print(f"{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}")
 
+    print()
     return 0
 
 if __name__ == "__main__":
