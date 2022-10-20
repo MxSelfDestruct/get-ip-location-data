@@ -5,7 +5,7 @@ Kludgy Python script to get the geolocations of many IP addresses at once. Uses 
 Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4 addresses to the script. Program will output locational data for all IPv4 addresses supplied in JSON notation.
 
 # Example
-    $ cat "93.184.216.34" | get-ip-location-data.py /var/log/auth.log
+    $ echo "93.184.216.34" | get-ip-location-data.py /var/log/auth.log
     [
       {
         "status": "success",
