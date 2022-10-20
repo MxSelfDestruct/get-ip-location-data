@@ -1,10 +1,10 @@
 # get-ip-location-data
 Kludgy Python script to get the geolocations of many IP addresses at once. Uses https://ip-api.com for data.
 
-# Usage:
+# Usage
 Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4 addresses to the script. Program will output locational data for all IPv4 addresses supplied in JSON notation.
 
-# Example:
+# Example
     $ cat "93.184.216.34" | get-ip-location-data.py /var/log/auth.log
     [
       {
@@ -72,3 +72,6 @@ Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4
       }
     ]
     $
+# Notes
+• Contributions are more than welcome.\
+• ip-api forbids use of its free endpoint for commercial use, so if you're using this in a commercial production environment (god help you), you'll have to fork over some cash to them.
