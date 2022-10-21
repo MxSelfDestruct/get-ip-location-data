@@ -64,7 +64,7 @@ def main(arguments):
             return 1
 
     # Filter out repeated IP addresses and divide into chunks of 100 for IP-API queries
-    unique_ip_addresses = [*set(ip_addresses)]
+    unique_ip_addresses = list(dict.fromkeys(ip_addresses))
     query_chunks = [unique_ip_addresses[i:i + MAX_ADDRESSES_IN_QUERY] for i in range(0, len(unique_ip_addresses), MAX_ADDRESSES_IN_QUERY)]
 
     # Construct request strings
