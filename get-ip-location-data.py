@@ -87,7 +87,7 @@ def main(arguments):
         # Unless this is the last request, wait 4 seconds to avoid flooding - IP-API only allows up to 15 batch requests
         # per minute without payment.
         if i != request_strings[-1]: # Not worried about false positives since duplicates already stripped
-            time.sleep(4) #
+            time.sleep(4)
 
     return 0
 
