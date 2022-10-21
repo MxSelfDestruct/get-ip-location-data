@@ -85,6 +85,7 @@ Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4
 # To-do
 • Add option to disable filtering out duplicates \
 • Add option to make non-batch requests and specify response format (XML, CSV, etc.) \
+• Add functionality to convert output from JSON to other formats (XML, CSV, etc.) \
 • Allow users to supply an IP-API key (low priority, will probably never happen)
 
 # random-ip-generator
