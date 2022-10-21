@@ -82,6 +82,10 @@ Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4
 • IP-API forbids use of its free endpoint for commercial use, so if you're using this in a commercial production environment - which you should not do - you'll have to fork over some cash to them. \
 • This script has only been tested on Linux. I can't think of a reason it wouldn't work on Windows or Mac OS, but if it doesn't please let me know.
 
+# To-do
+• Add option to disable filtering out duplicates \
+• Add option to make non-batch requests
+
 # random-ip-generator
 A script to generate random IP addresses for testing get-ip-location-data.
 
@@ -105,3 +109,8 @@ Call it with a number as an argument and the script will generate that many IP a
 
 # Notes
 • This script has only been tested on Linux. I can't think of a reason it wouldn't work on Windows or Mac OS, but if it doesn't please let me know.
+
+# To-do
+• Add option to prevent generation of duplicates \
+• Add options to exclude certain ranges (ie, 127.x.x.x block) \
+• Add options to only generate within certain ranges
