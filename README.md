@@ -84,7 +84,8 @@ Pass or pipe a bunch of IPv4 addresses and/or the names of files containing IPv4
 
 # To-do
 • Add option to disable filtering out duplicates \
-• Add option to make non-batch requests
+• Add option to make non-batch requests \
+• Allow users to supply an IP-API key (low priority, will probably never happen)
 
 # random-ip-generator
 A script to generate random IP addresses for testing get-ip-location-data.
