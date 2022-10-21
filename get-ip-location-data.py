@@ -81,10 +81,8 @@ def main(arguments):
         request_strings.append(request_string)
 
     # Send each request string to ip-api.com, tidy up the responses, and print them
-    for i in request_strings:
-        ip_api_response = json.dumps(json.loads(requests.post("http://ip-api.com/batch", data = i).text), indent = 2)
-
-        print(ip_api_response.replace("]\n", "\n]\n\n")) # Ew.
+    for i in request_strings:sha22
+        print(json.dumps(json.loads(requests.post("http://ip-api.com/batch", data = i).text), indent = 2))
 
         # Unless this is the last request, wait 4 seconds to avoid flooding. We're not worried about false positives
         # since duplicates have already been filtered out
