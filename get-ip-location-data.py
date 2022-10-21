@@ -84,10 +84,10 @@ def main(arguments):
     for i in request_strings:
         print(json.dumps(json.loads(requests.post("http://ip-api.com/batch", data = i).text), indent = 2))
 
-        # Unless this is the last request, wait 4 seconds to avoid flooding. We're not worried about false positives
-        # since duplicates have already been filtered out
-        if i != request_strings[-1]:
-            time.sleep(4) # IP-API only allows up to 15 batch requests per minute without payment.
+        # Unless this is the last request, wait 4 seconds to avoid flooding - IP-API only allows up to 15 batch requests
+        # per minute without payment.
+        if i != request_strings[-1]: # Not worried about false positives since duplicates already stripped
+            time.sleep(4) #
 
     return 0
 
